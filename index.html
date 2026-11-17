@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashley's 18th Birthday</title>
+  <style>
+    :root { --plum:#69418b; --lav:#eadcf4; --ink:#352044; --cream:#fff9f1; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family: Georgia, 'Times New Roman', serif; color:var(--ink); background:#f7effa; }
+    .hero {
+      min-height:92vh; display:grid; place-items:center; text-align:center; padding:48px 20px;
+      background:linear-gradient(135deg,rgba(49,25,68,.35),rgba(83,42,107,.30)),
+      url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1800&q=85') center/cover;
+    }
+    .hero-card { max-width:850px; width:100%; padding:34px 22px; background:rgba(112,72,145,.83); color:#fff8ee; border:1px solid rgba(255,255,255,.65); }
+    h1 { font-size:clamp(2.4rem,7vw,5rem); line-height:1.08; margin:0 0 16px; font-weight:500; letter-spacing:.04em; }
+    .date-script { font-size:clamp(1.7rem,4vw,2.6rem); font-style:italic; margin:16px 0; }
+    .subtitle { font-family:Arial,sans-serif; font-size:1.05rem; }
+    section { padding:64px 18px; }
+    .inner { max-width:1000px; margin:auto; }
+    .panel { background:rgba(238,220,248,.88); border:1px solid rgba(118,75,151,.35); padding:30px; box-shadow:0 12px 34px rgba(54,26,72,.12); }
+    h2 { text-align:center; font-size:clamp(1.8rem,4vw,2.6rem); margin:0 0 12px; color:#56336f; }
+    .lead { text-align:center; font-style:italic; margin:0 0 28px; color:#76528d; }
+    .welcome { text-align:center; line-height:1.8; font-size:1.08rem; max-width:780px; margin:auto; }
+    .signature { font-style:italic; font-size:1.3rem; color:#67418a; }
+    .music { text-align:center; }
+    .record { width:120px; height:120px; border-radius:50%; margin:18px auto; background:radial-gradient(circle,#d56b42 0 9%,#111 10% 14%,#202020 15% 48%,#050505 49% 100%); border:5px solid #2b2032; box-shadow:0 8px 18px #76528d55; }
+    .music iframe { width:min(100%,560px); height:158px; border:0; border-radius:12px; margin-top:18px; }
+    .details { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .detail { text-align:center; background:rgba(224,202,239,.88); padding:24px 16px; min-height:190px; }
+    .detail .emoji { font-size:2.5rem; display:block; margin-bottom:12px; }
+    .detail h3 { margin:6px 0; font-weight:normal; font-size:1.2rem; }
+    .detail p { margin:6px 0; line-height:1.5; }
+    a { color:#4c2b68; }
+    .maplink { display:inline-block; margin-top:8px; font-family:Arial,sans-serif; font-size:.92rem; }
+    .program { max-width:650px; margin:auto; padding:0; list-style:none; }
+    .program li { background:#f8f0fc; border-left:4px solid #9b72b8; margin:10px 0; padding:14px 18px; }
+    .gallery-note { text-align:center; line-height:1.7; }
+    .photo-slots { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:22px; }
+    .photo-slot { min-height:170px; display:grid; place-items:center; background:linear-gradient(135deg,#eadcf4,#d4b9e8); border:2px dashed #9b72b8; color:#684785; text-align:center; padding:12px; }
+    footer { text-align:center; padding:35px 15px 55px; background:#6f4a8d; color:#fff8ee; }
+    @media(max-width:700px) { .details,.photo-slots { grid-template-columns:1fr; } .panel { padding:22px 17px; } section { padding:42px 14px; } }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-card">
+      <h1>ASHLEY'S<br>18TH BIRTHDAY<br>YOU'RE INVITED!</h1>
+      <div class="date-script">January 10, 2027</div>
+      <p class="subtitle">A Celebration of Ashley's 18th</p>
+    </div>
+  </header>
 
+  <section>
+    <div class="inner panel">
+      <h2>Welcome to My Fairy Garden! 🦋</h2>
+      <p class="welcome">With a grateful heart and endless excitement, I invite you to celebrate a very special milestone in my life.<br><br>
+      As I turn 18, I would love to share this magical moment with the people who make my life more meaningful.<br><br>
+      Your presence will make my celebration even more memorable.<br><br>
+      Thank you for being part of my special day!<br>
+      <span class="signature">With love,<br>Ashley 💜</span></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="inner panel music">
+      <h2>♫ Ashley's Birthday Song</h2>
+      <p class="lead">A special song for this special milestone</p>
+      <div class="record" aria-hidden="true"></div>
+      <h3>18 — One Direction</h3>
+      <p>Press play to listen. The song plays here through the official YouTube player.</p>
+      <iframe src="https://www.youtube-nocookie.com/embed/VRpzJabYlQQ?rel=0"
+        title="One Direction - 18 (Official Audio)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+      <p><small>If the player does not load, <a href="https://www.youtube.com/watch?v=VRpzJabYlQQ" target="_blank" rel="noopener">open the official audio on YouTube</a>.</small></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="inner">
+      <h2>The Celebration Details</h2>
+      <p class="lead">A Day to Remember ✨</p>
+      <div class="details">
+        <div class="detail"><span class="emoji">📅</span><h3>DATE</h3><p>January 10, 2027</p></div>
+        <div class="detail"><span class="emoji">🕒</span><h3>TIME</h3><p>3:00 PM</p></div>
+        <div class="detail"><span class="emoji">📍</span><h3>VENUE</h3><p>AHF 77 Westside Private Resort &amp; Events Place</p>
+          <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=AHF+77+Westside+Private+Resort+%26+Events+Place%2C+Batangas+City" target="_blank" rel="noopener">View location on Google Maps ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="inner panel">
+      <h2>Birthday Program ✨</h2>
+      <p class="lead">A little glimpse of the celebration</p>
+      <ul class="program">
+        <li>Guest Arrival</li><li>Welcome Remarks</li><li>Grand Entrance</li><li>Dinner</li><li>18 Roses</li><li>18 Candles</li><li>Birthday Celebration</li>
+      </ul>
+      <p class="gallery-note"><small>Program order and times can be updated when finalized.</small></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="inner panel">
+      <h2>Ashley's Memories 📸</h2>
+      <p class="lead">Little moments, beautiful memories.</p>
+      <p class="gallery-note">Photo spaces are ready. We can add your chosen pictures later.</p>
+      <div class="photo-slots">
+        <div class="photo-slot">Your photo 1</div><div class="photo-slot">Your photo 2</div><div class="photo-slot">Your photo 3</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h2 style="color:#fff8ee">Thank you for celebrating with me! 🦋</h2>
+    <p>With love, Ashley 💜</p>
+  </footer>
+</body>
+</html>
